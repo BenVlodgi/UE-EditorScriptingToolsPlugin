@@ -175,7 +175,7 @@ bool FEditorScriptingToolsModule::CanRegisterEditorScriptingUtility(const IEdito
 	case EEditorScriptingUtilityType::ComponentVisulizer: return CanRegisterComponentVisualizerUtilityBlueprint(CastChecked<UComponentVisualizerUtilityBlueprint>(ScriptingUtilityAsset));
 	case EEditorScriptingUtilityType::UserDefinedSettings: return CanRegisterEditorUserDefinedSettingsUtilityBlueprint(CastChecked<UEditorUserDefinedSettingsUtilityBlueprint>(ScriptingUtilityAsset));
 	case EEditorScriptingUtilityType::UserDefinedActions: return CanRegisterEditorUserDefinedActions(CastChecked<UEditorUserDefinedActions>(ScriptingUtilityAsset));
-	default: ensureMsgf(false, TEXT("This utility type is not handled!")); return false;
+	default: ensureMsgf(false, TEXT("This utility type is not handled!")); break;
 	}
 
 	return false;
