@@ -97,7 +97,7 @@ namespace LevelViewportPrimitiveDrawingUtils
 		}
 	}
 
-	void DrawCylinder(const FDrawPrimitivesContext& Context, const FVector& Center, const FRotator& Rotation, UMaterialInterface* Material, float Radius, float HalfHeight, uint32 NumSides, EDepthPriorityGroup DepthPriorityGroup, float DepthBias)
+	void DrawCylinder(const FDrawPrimitivesContext& Context, const FVector& Center, const FRotator& Rotation, const UMaterialInterface* Material, float Radius, float HalfHeight, uint32 NumSides, EDepthPriorityGroup DepthPriorityGroup, float DepthBias)
 	{
 		if (FPrimitiveDrawInterface* PDI = Context.PDI)
 		{
