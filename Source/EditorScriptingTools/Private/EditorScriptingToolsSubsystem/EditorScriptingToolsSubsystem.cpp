@@ -59,9 +59,9 @@ void UEditorScriptingToolsSubsystem::CheckValidity()
 {
 	bool bModified = false;
 	{
-		CHECK_UTILITY_LIST_VALIDITY(DetailCustomizationUtilityBlueprints);
-		CHECK_UTILITY_LIST_VALIDITY(ComponentVisualizerUtilityBlueprints);
-		CHECK_UTILITY_LIST_VALIDITY(EditorUserDefinedSettingsUtilityBlueprints);
+		//CHECK_UTILITY_LIST_VALIDITY(DetailCustomizationUtilityBlueprints);
+		//CHECK_UTILITY_LIST_VALIDITY(ComponentVisualizerUtilityBlueprints);
+		//CHECK_UTILITY_LIST_VALIDITY(EditorUserDefinedSettingsUtilityBlueprints);
 	}
 
 	if (bModified)
