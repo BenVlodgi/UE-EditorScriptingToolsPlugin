@@ -101,10 +101,11 @@ namespace LevelViewportPrimitiveDrawingUtils
 	{
 		if (FPrimitiveDrawInterface* PDI = Context.PDI)
 		{
+			const FMaterialRenderProxy* MaterialRenderProxy = Material != nullptr ? Material->GetRenderProxy() : GEditor->ArrowMaterial->GetRenderProxy();
 			const FVector X = Rotation.Vector();
 			const FVector Y = FRotationMatrix(Rotation).GetScaledAxis(EAxis::Y);
 			const FVector Z = FRotationMatrix(Rotation).GetScaledAxis(EAxis::Z);
-			//::DrawCylinder(PDI, Center, X, Y, Z, Radius, HalfHeight, NumSides, Material, ENUM_TO_UINT8(DepthPriorityGroup));
+			::DrawCylinder(PDI, FMatrix::Identity, Center, X, Y, Z, Radius, HalfHeight, NumSides, MaterialRenderProxy, CAST_TO_UINT8(DepthPriorityGroup));
 		}
 	}
 
