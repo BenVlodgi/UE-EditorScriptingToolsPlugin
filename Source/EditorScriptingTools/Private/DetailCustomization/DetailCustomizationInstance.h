@@ -23,7 +23,7 @@ class FNativeDetailCustomizationInstance;
 class SWidget;
 
 
-UCLASS(Abstract, Blueprintable, config = Editor)
+UCLASS(Abstract, Blueprintable, config = EditorScriptingTools, DefaultConfig)
 class   UDetailCustomizationInstance : public UObject
 {
 	GENERATED_UCLASS_BODY()
